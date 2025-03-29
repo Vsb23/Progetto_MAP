@@ -1,0 +1,24 @@
+\section{Introduzione}
+
+Il progetto in questione verte sull'argoemento dell'\textit{Agglomerative Clustering}, una tecnica di clusterizzazione basata sui metodi Signle distance e Average Distance. 
+
+Il porogfeto in questione è suddiviso in una parte client e una server, che comunicando tra loro, generano il dendrogramma, permettendo inoltre di visualizzare e memorizzare tali risultati o di caricarne dei precedenti.
+
+È inoltre possibile visualizzare nuovamente dei file caricati in passato per visualizzare i cluster e i dendrogrammi associati. 
+
+
+\subsection{Agglomerative Clustering}
+
+L'algoritmo di clustering utilizzato in tale progetto, come si può desumer dal nome, sfrutta il concetto di clustering agglomerativo. In pratica, tratta ciascun cluster in maneira separata dagli altri, unendo progressivamente quelli più vicini, in base a due crtieri principali, nel nostro caso.
+
+Il princiaple vantaggio  rispetto ad altri algoritmi di lcustering, come il k-means, è che in questo modo non è necessario speficiare in anticippo la quantità di cluster da analizzare. 
+
+I criteri utilizzati nel progetto A-CLus sono i seguenti: 
+
+\begin{enumerate}
+    \item \textbf{Single-Link}: tale criterio determina la distanza minima tra i punti dei vari cluster
+
+    \begin{equation}
+        D\left(C1,C2\right) = \underset{\left(t1 \in C1,t2 \in C2\right)}{min}\left( dist\left(t1,t2\right)\right)
+    \end{equation}
+\end{enumerate}

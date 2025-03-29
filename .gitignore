@@ -1,2 +1,9 @@
 *.msi
 *.exe
+Documentazione/Nuova docs/main.log
+Documentazione/Nuova docs/main.fls
+Documentazione/Nuova docs/main.fdb_latexmk
+Documentazione/Nuova docs/main.aux
+Documentazione/Nuova docs/Introduzione.aux
+Documentazione/Nuova docs/main.toc
+Documentazione/Nuova docs/main.synctex.gz

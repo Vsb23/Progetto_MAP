@@ -106,3 +106,99 @@ Selezionando l'opzione 1 per importare un dendrogramma preesistente, sarà neces
 
 Dopo l'inserimento del nome dell'archivio, il sistema visualizzerà il dendrogramma caricato e concluderà l'esecuzione.
 
+
+\subsection{Verifiche funzionali di H-CLUS BASE}
+
+Durante la fase di testing, sono stati analizzati diversi scenari critici per validare la robustezza dell'applicazione:
+
+\begin{itemize}
+    \item \textbf{Gestione di tabelle inesistenti:} 
+    Quando viene specificato un identificativo di tabella non presente nel database, il sistema visualizza un appropriato messaggio diagnostico e offre all'utente la possibilità di inserire una denominazione alternativa.
+    
+    \item \textbf{Validazione delle selezioni di menu:} 
+    L'inserimento di valori non conformi alle opzioni disponibili (diversi da 1 o 2) viene intercettato, consentendo all'utente di ripetere la selezione senza interruzioni del flusso operativo.
+    
+    \item \textbf{Controllo sull'esistenza degli archivi:} 
+    Nel caso di caricamento di un dendrogramma precedentemente salvato, il sistema verifica l'esistenza dell'archivio specificato. In caso negativo, viene presentata una notifica e l'applicazione termina la sessione.
+    
+    \item \textbf{Validazione parametri di profondità:} 
+    L'inserimento di valori non ammissibili per il parametro di profondità (zero o negativi) viene rilevato dal sistema che, pur proseguendo con la richiesta del metodo di calcolo, interromperà l'elaborazione notificando l'anomalia.
+    
+    \item \textbf{Controllo selezioni metodologiche:} 
+    L'inserimento di opzioni non valide per la selezione della metodologia di calcolo delle distanze viene gestito permettendo all'utente di riformulare la propria scelta.
+    
+    \item \textbf{Verifica di compatibilità dimensionale:} 
+    Il sistema controlla la congruenza tra la cardinalità degli esempi nella tabella corrente e quella memorizzata nell'oggetto serializzato. In caso di incongruenza, viene visualizzato un messaggio esplicativo e l'esecuzione viene terminata.
+    
+    \item \textbf{Gestione connettività client-server:} 
+    L'avvio del client in assenza del componente server attivo genera un tentativo di connessione all'indirizzo locale (127.0.0.1) che, non trovando un endpoint disponibile, risulta in un rifiuto della connessione con relativa notifica.
+    
+    \item \textbf{Elaborazione su dataset vuoti:} 
+    Quando l'utente tenta di eseguire un'analisi di clustering su una tabella priva di contenuti, il sistema identifica la condizione e fornisce un'appropriata segnalazione.
+\end{itemize}
+
+\section{ESEGUIRE H-CLUS ESTESO}
+
+\subsection{Procedura di avvio dell'applicazione estesa}
+
+Per inizializzare correttamente la versione estesa di H-CLUS, attenersi alla seguente sequenza operativa:
+
+\begin{enumerate}
+    \item Accedere alla directory "H-CLUS\_Esteso" > "Jar + Bat"
+    \item All'interno della suddetta cartella, eseguire il file "Start Server.bat" con doppio click, mantenendo attiva la finestra del prompt dei comandi
+    \item Procedere con l'avvio del file "Start Client.bat" tramite doppio click, il quale genererà un'ulteriore finestra di comando
+    \item Aprire Telegram e cercare "Hierarchical Clustering Bot" utilizzando il tag "@HClusBot" oppure attraverso il link diretto
+\end{enumerate}
+
+\textbf{Avvertenza}: È necessario mantenere attivi i terminali del server e del client per garantire la comunicazione tra tutte le componenti del sistema.
+
+\subsection{Avvio dall'ambiente di sviluppo}
+
+Per avviare e testare il progetto direttamente dall'IDE (richiede l'installazione del plugin Buildship Gradle Integration):
+
+\begin{enumerate}
+    \item Aprire la cartella Server, accedere all'icona di Gradle, navigare su Task, selezionare Build e fare doppio clic su Build\\
+    Una corretta esecuzione visualizzerà lo stato "BUILD SUCCESSFUL"
+    
+    \item Aprire la cartella Client, accedere all'icona di Gradle, navigare su Task, selezionare Build e fare doppio clic su Build\\
+    Una corretta esecuzione visualizzerà lo stato "BUILD SUCCESSFUL"
+    
+    \item Eseguire il Main del Client
+    
+    \item Aprire Telegram e cercare "Hierarchical Clustering Bot" utilizzando il tag "@HClusBot" per iniziare l'interazione con il bot
+\end{enumerate}
+
+\subsection{GUIDA OPERATIVA PER H-CLUS ESTESO}
+
+% FOTO DELL'INTERFACCIA TELEGRAM
+
+L'interfaccia del bot Telegram offre un'esperienza utente semplificata e accessibile da dispositivi mobili. Attraverso il bot è possibile:
+
+\begin{itemize}
+    \item Generare nuovi dendrogrammi specificando tabella, profondità e metodo di calcolo
+    \item Visualizzare graficamente i risultati dell'analisi di clustering
+    \item Salvare i dendrogrammi per consultazioni future
+    \item Caricare dendrogrammi precedentemente salvati
+    \item Ricevere notifiche sullo stato dell'elaborazione
+\end{itemize}
+
+\subsection{Verifiche funzionali di H-CLUS ESTESO}
+
+Durante la fase di testing della versione estesa, sono stati verificati i seguenti scenari:
+
+\begin{itemize}
+    \item \textbf{Resilienza della connessione Telegram:} 
+    Il sistema gestisce correttamente disconnessioni temporanee e riprende l'elaborazione al ripristino della connettività.
+    
+    \item \textbf{Elaborazione concorrente di richieste:} 
+    La capacità di processare simultaneamente richieste da diversi utenti Telegram è stata validata anche in condizioni di carico elevato.
+    
+    \item \textbf{Consistenza tra piattaforme:} 
+    I risultati ottenuti tramite interfaccia Telegram sono identici a quelli generati dall'applicazione desktop.
+    
+    \item \textbf{Persistenza dei dati:} 
+    I dendrogrammi salvati attraverso l'interfaccia Telegram possono essere recuperati sia dalla versione estesa che da quella base.
+    
+    \item \textbf{Gestione di input non validi:} 
+    Il bot implementa controlli di validazione che prevengono errori di sistema in caso di input malformati.
+\end{itemize}

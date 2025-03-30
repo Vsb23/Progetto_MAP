@@ -31,3 +31,78 @@ La tecnica di clustering agglomerativo implementata nel sistema "H-CLUS" costitu
 
 
 Con il procedere delle aggregazioni tra cluster, si sviluppa un dendrogramma che illustra la gerarchia delle aggregazioni. Il procedimento continua fino al raggiungimento di un cluster unificato o fino a una soglia di profondità stabilita dall'utilizzatore. La visualizzazione mediante dendrogramma rende la metodologia particolarmente comprensibile, facilitando l'esplorazione strutturale dei dati a diversi livelli di granularità. Inoltre, questa strategia non è influenzata dalla configurazione iniziale dei centroidi, riducendo così la probabilità di risultati inconsistenti e garantendo una rappresentazione più accurata dell'organizzazione interna del dataset.RiprovaClaude può commettere errori. Verifica sempre le risposte con attenzione.
+
+
+# 3. ESEGUIRE H-CLUS BASE
+
+## Procedura di avvio dell'applicazione
+
+Per inizializzare correttamente la versione standard di H-CLUS, attenersi alla seguente sequenza operativa:
+
+1. Accedere alla directory "H-CLUS_Base" > "Jar + Bat"
+2. All'interno della suddetta cartella, eseguire il file "start_server.bat" con doppio click, mantenendo attiva la finestra del prompt dei comandi
+3. Procedere con l'avvio del file "start_client.bat" tramite doppio click, il quale genererà un'ulteriore finestra di comando; a questo punto l'applicazione sarà pronta all'utilizzo
+
+**Avvertenza**: È necessario mantenere attivo il terminale del server per garantire la comunicazione tra le componenti client e server.
+
+### Avvio dall'ambiente di sviluppo:
+
+1. Aprire il progetto Server, incorporare nelle "Libraries" il file "mysql-connector-java-8.0.17" disponibile nella cartella "Risorse" e avviare MultServer
+2. Aprire il progetto Client e lanciare MainTest
+
+## GUIDA OPERATIVA PER H-CLUS BASE
+
+### Interfaccia iniziale
+
+ FOTO DELL'INTERFACCIA INIZIALE
+
+
+All'avvio dell'applicazione verrà visualizzata una schermata contenente:
+- **addr**: visualizza l'indirizzo IP della connessione corrente
+- **Socket**: presenta tre parametri:
+  - addr: indirizzo locale
+  - port: porta del server
+  - localport: porta locale
+
+Al prompt "Nome tabella", specificare il nome della tabella target (esempio: exampleTab)
+
+### Selezione delle operazioni disponibili
+
+FOTO TABELLA 
+
+Dopo l'inserimento della tabella, verrà proposto un menu con due alternative:
+
+1) **Carica Dendrogramma da File**: permette di importare un dendrogramma precedentemente memorizzato
+2) **Apprendi Dendrogramma da Database**: consente di generare un nuovo dendrogramma analizzando i dati presenti nella tabella selezionata
+
+### Percorso operativo - Opzione 2 (Generazione nuovo dendrogramma)
+
+FOTO
+Selezionando l'opzione 2, il sistema richiederà l'inserimento del parametro di profondità desiderato per il dendrogramma.
+
+Successivamente, l'applicazione proporrà due metodologie di calcolo alternative:
+1) **Single-link**: identifica la distanza minima tra cluster, connettendo gli elementi più prossimi tra i gruppi
+2) **Average-link**: determina la distanza utilizzando la media tra tutti gli elementi dei cluster considerati
+
+#### Elaborazione con Single-link
+
+FOTO 
+Selezionando l'opzione Single-link (1), verrà elaborato e visualizzato il dendrogramma risultante. L'applicativo richiederà poi di specificare il nome del file per l'archiviazione del dendrogramma, completo di estensione.
+
+FOTO 
+
+Indicare il nome desiderato (esempio: Example1.dat). Il dendrogramma verrà salvato nella cartella "saved" all'interno della directory "Jar + Bat" e l'applicazione terminerà l'esecuzione.
+
+#### Elaborazione con Average-link
+
+FOTO 
+Selezionando l'opzione Average-link (2), il sistema elaborerà il dendrogramma utilizzando il criterio della distanza media e lo visualizzerà a schermo. Successivamente, verrà richiesto di specificare il nome del file per la memorizzazione del dendrogramma, completo di estensione.
+
+### Percorso operativo - Opzione 1 (Caricamento dendrogramma esistente)
+
+FOTO 
+
+Selezionando l'opzione 1 per importare un dendrogramma preesistente, sarà necessario indicare il nome completo del file archivio, comprensivo di estensione. I file precedentemente salvati sono localizzati nella cartella "saved" all'interno della directory "Jar + Bat".
+
+Dopo l'inserimento del nome dell'archivio, il sistema visualizzerà il dendrogramma caricato e concluderà l'esecuzione.
+

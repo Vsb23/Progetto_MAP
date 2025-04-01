@@ -32,11 +32,31 @@ Una volta confermata l'esecuzione come amministratore, si procederà all'install
 
 Cliccare su \textbf{Avanti},nuovamente \textbf{Avanti} e infine, nel caso in cui l'installazione sia andata a buon fine, si dovràò cliccare sul tasto \textbf{Chiudi}.
 
+\subsection{Variabili di ambiente}
+
+è consigliato creare una variabile di ambiente per il JDK. Per farlo, si dovrà cercare la voce \textbf{variabili di ambiente} nella barra di ricerca di Windows e cliccare su {Modifica le variabili di ambiente per il tuo account}.
+
+Successivamente si dovrà cliccare sul pulsante \textbf{Variabili di ambiente} e si aprirà una schermata con le variabili di ambiente. 
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width= 0.5\textwidth]{images/variabili ambienti.png}
+    \caption{Schermata delle variabili di ambiente}
+\end{figure}
+
+Nella schermata, si dovra cliccare sulla variabile \texttt{PATH} e modificarla in modo da aggiungere il percorso del JDK, inserendo il percorso in cui è stato installato il JDK.
+
 Una volta completata l'installazione del JDK, si procederà automaticamente con l'installazione del MySQL.
+
+
 
 \subsection{Installazione MySQL}
 
 Anche qui sarà necessario fornire i permessi di amministratore, cliccare dunque su \underline{Sì}.
+
+\subsection*{Schermata iniziale}
 
 Dopodiché si aprirà la schermata di installazione di MySQL.
 
@@ -48,10 +68,16 @@ Dopodiché si aprirà la schermata di installazione di MySQL.
 
 Selezionare il tipo di setup \textbf{Full} e cliccare su \textbf{Next}. Tale scelta permetterà di installare tutti i componenti necessari per l'esecuzione del programma.
 
+\subsection*{Download dei file}
+
 Si passerà alla schermata di download dei file necessari per l'installazione, cliccare su \textbf{Execute}. 
 
-Tale schermata potrebbe richiedere un po' di tempo per il download dei file, a seconda della velocità della connessione internet. 
-
+\begin{tcolorbox}[  colback=white!5!white, colframe=gray, title={AVVERTENZA} ]
+    
+    
+    Tale schermata potrebbe richiedere un po' di tempo per il download dei file, a seconda della velocità della connessione internet. 
+\end{tcolorbox}
+    
 Dopo aver scaricato i file, si dovrà cliccare nuovamente su \textbf{Execute}.
 
 \begin{figure}[h!]
@@ -60,6 +86,7 @@ Dopo aver scaricato i file, si dovrà cliccare nuovamente su \textbf{Execute}.
     \caption{Download MySQL}
 \end{figure}
 
+\subsection*{Configurazione del account MySQL}
 Una volta terminato il download, si procederà con la configurazione dell'account MySQL. Si dovrà quindi scegliere una password, necessaria per accedere al database. 
 
 
@@ -69,6 +96,7 @@ Una volta terminato il download, si procederà con la configurazione dell'accoun
     \caption{Configurazione account MySQL}
 \end{figure}
 
+
 Si giungerà infine alla scehermata di applicazione della configurazione del database. Cliccare su \textbf{Execute} per applicare la configurazione.
 
 \begin{figure}[h!]
@@ -77,6 +105,16 @@ Si giungerà infine alla scehermata di applicazione della configurazione del dat
     \caption{Completamento installazione}
 \end{figure}
 
+Una volta terminata anche l'installazione del MySQL, si dovrà cliccare su \textbf{Finish} per chiudere l'installler. 
+
+\begin{tcolorbox}[  colback=white!5!white, colframe=gray, title={AVVERTENZA} ]
+    Per un corretto funzionamento sia del JDK che del MySQL, è consiglaito riavviare il computer.
+    
+\end{tcolorbox}
+
+
+\subsection*{Schermata finale}
+Al termine dell'installazione il programma \texttt{resources.bat} mostrerà la seguente schermata. 
 
 \begin{figure}[h!]
     \centering

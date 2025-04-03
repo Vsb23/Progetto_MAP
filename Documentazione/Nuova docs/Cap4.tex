@@ -73,3 +73,116 @@ L'avvio del client in assenza del componente server attivo genera un tentativo d
 
 Quando l'utente tenta di eseguire un'analisi di clustering su una tabella priva di contenuti, il sistema identifica la condizione e fornisce un'appropriata segnalazione.
 
+
+\section{Modifiche Implementative}
+\subsection{Adattamenti nella Versione Base}
+\subsubsection{Modifiche ai Requisiti Originali}
+\begin{itemize}
+    \item \textbf{Metodo \texttt{getLength()} in \texttt{ClusterSet}}:
+    \begin{itemize}
+        \item \textbf{Funzionalità}: Restituisce la lunghezza dell'array \texttt{C} contenente i cluster
+        \item \textbf{Integrazione}: Utilizzato in \texttt{loadDendrogramFromFile()} per verificare la consistenza dimensionale tra dataset corrente e dendrogramma caricato
+    \end{itemize}
+
+    \item \textbf{Metodo \texttt{getLevel0Length()} in \texttt{HierarchicalClusterMiner}}:
+    \begin{itemize}
+        \item \textbf{Funzionalità}: Fornisce la cardinalità dei cluster al livello base del dendrogramma
+        \item \textbf{Scopo}: Garantire la coerenza tra struttura gerarchica e dati correnti
+    \end{itemize}
+
+    \item \textbf{Metodo \texttt{getDepth()} in \texttt{HierarchicalClusterMiner}}:
+    \begin{itemize}
+        \item \textbf{Funzionalità}: Determina la profondità effettiva del dendrogramma
+        \item \textbf{Utilizzo}: Previene caricamento di strutture incompatibili con il dataset selezionato
+    \end{itemize}
+\end{itemize}
+
+\subsection{Evoluzione Architetturale nella Versione Estesa}
+\subsubsection{Riprogettazione dello State Management}
+\begin{itemize}
+    \item \textbf{Decentralizzazione dello Stato}:
+    \begin{itemize}
+        \item Rimozione della persistenza di \texttt{Data} lato server
+        \item Migrazione della gestione stato verso il client Telegram
+        \item Introduzione del pattern \texttt{StateContext} per isolare le sessioni utente
+    \end{itemize}
+
+    \item \textbf{Implementazione del Contesto di Stato}:
+    \begin{itemize}
+        \item \texttt{StateHistory}: Stack per tracciare la cronologia degli stati
+        \begin{itemize}
+            \item Supporto operazioni di rollback controllato
+            \item Meccanismo di transizione stati tramite \texttt{push/pop}
+        \end{itemize}
+        
+        \item \texttt{allowBack}: Flag per abilitare/disabilitare le transizioni inverse
+        \item Separazione in fasi operative:
+        \begin{itemize}
+            \item \texttt{preOperation}: Inizializzazione stato
+            \item \texttt{postOperation}: Gestione transizioni e validazione input
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Modello di Gestione Errori Rafforzato}
+\begin{itemize}
+    \item \textbf{Gestione Centralizzata delle Eccezioni}:
+    \begin{itemize}
+        \item \textbf{Pre-Operation}: Rollback automatico allo stato precedente
+        \item \textbf{Post-Operation}: Riterazione della fase corrente con notifica utente
+    \end{itemize}
+
+    \item \textbf{Meccanismi di Validazione}:
+    \begin{itemize}
+        \item Controllo consistenza nomi file
+        \item Verifica intervalli valori numerici
+        \item Convalida formale degli input testuali
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Architettura Client-Server Ottimizzata}
+\begin{itemize}
+    \item \textbf{Comunicazione Stateless}:
+    \begin{itemize}
+        \item Sessioni brevi per richiesta/risposta
+        \item Eliminazione lock su risorse condivise
+    \end{itemize}
+
+    \item \textbf{Design Estensibile}:
+    \begin{itemize}
+        \item Separazione chiara tra logica di business e gestione interfaccia
+        \item Astrazione dei canali di comunicazione (Socket/Telegram API)
+    \end{itemize}
+
+    \item \textbf{Modello Sicurezza}:
+    \begin{itemize}
+        \item Isolamento sessioni utente tramite ID univoci
+        \item Crittografia end-to-end per dati sensibili
+    \end{itemize}
+\end{itemize}
+
+\begin{table}[h]
+    \centering
+    \caption{Confronto architetturale versione Base vs Estesa}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Caratteristica} & \textbf{Base} & \textbf{Estesa} \\
+        \hline
+        Gestione stato & Server-side & Client-side \\
+        \hline
+        Persistenza dati & Sessionale & Transazionale \\
+        \hline
+        Modello sicurezza & Base & Rafforzato \\
+        \hline
+        Concorrenza & Multi-thread & Event-driven \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Questi adattamenti hanno permesso di:
+\begin{itemize}
+    \item Supportare multipli client simultanei
+    \item Garantire scalabilità orizzontale
+    \item Migliorare l'efficienza nella gestione risorse
+    \item Ottenere maggiore flessibilità architetturale
+\end{itemize}

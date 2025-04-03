@@ -1,7 +1,6 @@
 drop user MapUser@localhost;
 flush privileges;
 CREATE USER 'MapUser'@'localhost' IDENTIFIED BY 'map';
-GRANT ALL PRIVILEGES ON MapDB.* TO 'MapUser'@'localhost';
 
 DROP DATABASE IF EXISTS mapdb;
 CREATE DATABASE IF NOT EXISTS mapdb;

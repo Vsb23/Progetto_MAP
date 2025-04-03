@@ -2,6 +2,31 @@
 
 \subsection*{Operazioni preliminari}
 
+Prima di poter eseguire il programma, occorre importare il database di A-CLus in MySQL. 
+
+Tale file è presente nella cartella \texttt{A-CLus/Risorse} e si chiama \texttt{mapdb.sql}. 
+
+Per importare il database, è necessario semplciemente accedere al MySQL tramite root e digitare il seguente comando \texttt{source} seguito dal percorso del file \texttt{mapdb.sql}. 
+
+Tale percorso si può ottenere semplciemente trascinando il file del database sul terminale di MySQL.
+
+Alle fine dell'importazione, il terminale di MySQL dovrebbe mostrare un messaggio simile al seguente:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/import mysql.png}
+\end{figure}
+
+È possibile verificare la corretta improtazione anche uscendo da MySQl e accedere con le credenziali dell'utente MapUser, come mostrato nella figura seguente:
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/import mapdb.png}
+\end{figure}
+
+La password dell'utente MapUser è \texttt{map}. Se viene confermato l'accesso al database, significa che l'importazione è avvenuta con successo. 
+
+Sarà sufficiente rieffettuare l'importazione del database nel nuovo utente MapUser.
 
 \subsection*{Avvio dell'applicazione}
 

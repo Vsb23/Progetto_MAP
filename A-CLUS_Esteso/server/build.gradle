@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'org.map'
+version = '1.0-SNAPSHOT'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.29'
+}
+
+shadowJar {
+    archiveBaseName.set('server')
+    archiveClassifier.set('')
+    mergeServiceFiles()
+    manifest {
+        attributes('Main-Class': 'server.MultiServer')
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -2,17 +2,19 @@
 
 Durante la fase di testing, sono stati analizzati diversi scenari critici per validare la robustezza dell'applicazione:
 
-\substection{Gestione di tabelle inesistenti}
+\subsection{Gestione di tabelle inesistenti}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{images/errore_tabella.png.png}
+    \includegraphics[width=\textwidth]{images/errore_tabella.png}
 \end{figure}
 
 Quando viene specificato un identificativo di tabella non presente nel database, il sistema visualizza un appropriato messaggio diagnostico e offre all'utente la possibilità di inserire una denominazione alternativa.
 
 
 \subsection{Validazione delle selezioni di menù}
+
+La schermata di selezione del menù principale consente di scegliere tra due opzioni: "Carica Dendrogramma" o "Esegui Clustering".
 
 \begin{figure}[h!]
     \centering
@@ -59,7 +61,7 @@ Nel caso di caricamento di un dendrogramma precedentemente salvato, il sistema v
 \subsection{Gestione connettività client-server}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{images/connettività_clientserver.png.png}
+    \includegraphics[width=\textwidth]{images/connettività_clientserver.png}
 \end{figure}
 L'avvio del client in assenza del componente server attivo genera un tentativo di connessione all'indirizzo locale (127.0.0.1) che, non trovando un endpoint disponibile, risulta in un rifiuto della connessione con relativa notifica.
 

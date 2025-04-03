@@ -41,7 +41,7 @@ public class BinaryFileHandler {
      * <h4>Costruttore di default che inizializza il percorso della directory a {@code "./saved"}.</h4>
      */
     public BinaryFileHandler() {
-        this.path = "./saved";
+        this.path = "./Server/saved";
     }
 
     /**

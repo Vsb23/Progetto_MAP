@@ -20,7 +20,7 @@ public class Main {
      * @param args Parametri da riga di comando (non utilizzati).
      */
     public static void main(String[] args) {
-        String botToken = "7318479552:AAEaZwdbaQyw03bqFwMZaLC6fKRsc4tcCcw";
+        String botToken = "7004861227:AAG3gTfxZY0nWDP9_uZ-6t3R49eRoLDrmlk";
 
         try (TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication()) {
             botsApplication.registerBot(botToken, new TelegramBot(new OkHttpTelegramClient(botToken)));

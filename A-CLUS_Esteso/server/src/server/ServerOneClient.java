@@ -70,7 +70,7 @@ public class ServerOneClient extends Thread {
      */
     private final ObjectOutputStream out;
     /**
-     * <h4>Oggetto di tipo {@link HierachicalClusterMiner} per effettuare l'H-CLUS.</h4>
+     * <h4>Oggetto di tipo {@link HierachicalClusterMiner} per effettuare l'A-CLus.</h4>
      */
     private HierachicalClusterMiner h_clus;
 
@@ -236,7 +236,7 @@ public class ServerOneClient extends Thread {
             out.writeObject(message);
         } else if(h_clus.getLevel0Length() > new Data(tableName).getNumberOfExamples()) {
             String message = "Il numero di esempi nella tabella scelta e' minore del " +
-                    "numero di esempi con cui e' stato salvato l'oggetto h-clus precedentemente serializzato.";
+                    "numero di esempi con cui e' stato salvato l'oggetto A-CLus precedentemente serializzato.";
             System.out.println(message);
             out.writeObject(message);
         }{

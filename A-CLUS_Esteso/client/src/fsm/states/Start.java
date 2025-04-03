@@ -1,3 +1,4 @@
+
 package fsm.states;
 
 import fsm.State;
@@ -35,7 +36,7 @@ public class Start extends State {
      */
     @Override
     protected SendMessage executePreHandle(StateContext context, Update update) {
-        String messageText = "<b>Client H-Clustering tramite Bot Telegram 🇮🇹</b>\n\n" +
+        String messageText = "<b>Client A-Clustering tramite Bot Telegram 🇮🇹</b>\n\n" +
                 "Ciao " + update.getMessage().getFrom().getUserName() + "!\n\n" +
                 "Questo bot ti permette di eseguire clustering o visualizzare risultati di clustering salvati nel server.\n\n" +
                 "Clicca <b>'inizia'</b> sulla tastiera per continuare.";

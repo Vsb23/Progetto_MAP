@@ -60,7 +60,7 @@ public class ServerOneClient extends Thread{
     private final ObjectOutputStream out;
 
     /**
-     * <h4>Oggetto di tipo {@link HierachicalClusterMiner} per effettuare l'H-CLUS.</h4>
+     * <h4>Oggetto di tipo {@link HierachicalClusterMiner} per effettuare l'A-CLus.</h4>
      */
     private HierachicalClusterMiner h_clus;
 

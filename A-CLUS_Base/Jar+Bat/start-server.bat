@@ -1,3 +1,3 @@
 @echo off
-java -jar Server.jar
+java -jar "A-CLUS_Base - server.jar"
 pause

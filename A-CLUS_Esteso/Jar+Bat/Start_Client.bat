@@ -1,3 +1,3 @@
 @echo off
-java -jar client-1.0-SNAPSHOT.jar 
+java -jar "A-CLUS_Esteso - client .jar" 
 pause

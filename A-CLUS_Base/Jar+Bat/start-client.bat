@@ -1,3 +1,3 @@
 @echo off
-java -jar Client.jar 127.0.0.1 8080
+java -jar "A-CLUS_Base - client.jar"
 pause

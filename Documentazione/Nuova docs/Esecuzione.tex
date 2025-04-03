@@ -62,5 +62,90 @@ L'interfaccia iniziale di A-CLus è composta da tre sezioni principali:
     \caption{Interfaccia iniziale di A-CLus}
 \end{figure}
 
+L'interfaccia iniziale di A-CLus è composta da tre sezioni principali:
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/client in esecuzione.png}
+    \caption{Interfaccia iniziale di A-CLus}
+\end{figure}
+
+\subsection{Selezione delle operazioni disponibili}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/inserimento_tabella.png}
+\end{figure}
+
+Dopo l'inserimento della tabella, verrà proposto un menu con due alternative:
+\begin{enumerate}
+    \item \textbf{Carica Dendrogramma da File}: permette di importare un dendrogramma precedentemente memorizzato
+    \item \textbf{Apprendi Dendrogramma da Database}: consente di generare un nuovo dendrogramma analizzando i dati presenti nella tabella selezionata
+\end{enumerate}
+
+\subsection{Percorso operativo - Opzione 2 (Generazione nuovo dendrogramma)}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/apprendi_datagramma.png}
+\end{figure}
+
+Selezionando l'opzione 2, il sistema richiederà l'inserimento del parametro di profondità desiderato per il dendrogramma.
+
+\subsection{Inserimento Profondità}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/inserimento_profondità.png}
+\end{figure}
+
+Successivamente, l'applicazione proporrà due metodologie di calcolo alternative:
+\begin{enumerate}
+    \item \textbf{Single-link}: identifica la distanza minima tra cluster, connettendo gli elementi più prossimi tra i gruppi
+    \item \textbf{Average-link}: determina la distanza utilizzando la media tra tutti gli elementi dei cluster considerati
+\end{enumerate}
+
+\subsubsection{Elaborazione con Single-link}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/scelta_singleLink.png}
+\end{figure}
+
+Selezionando l'opzione Single-link (1), verrà elaborato e visualizzato il dendrogramma risultante. L'applicativo richiederà poi di specificare il nome del file per l'archiviazione del dendrogramma, completo di estensione.
+
+\subsection{Inserimento nome file}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/inserimento_nome_file.png}
+\end{figure}
+
+Indicare il nome desiderato (esempio: \texttt{Example1.dat}). Il dendrogramma verrà salvato nella cartella \texttt{"saved"} all'interno della directory \texttt{"Jar + Bat"} e l'applicazione terminerà l'esecuzione.
+
+\subsubsection{Elaborazione con Average-link}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/scelta_averageLink.png}
+\end{figure}
+
+Selezionando l'opzione Average-link (2), il sistema elaborerà il dendrogramma utilizzando il criterio della distanza media e lo visualizzerà a schermo. Successivamente, verrà richiesto di specificare il nome del file per la memorizzazione del dendrogramma, completo di estensione.
+
+\subsection{Percorso operativo - Opzione 1 (Caricamento dendrogramma esistente)}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/carica_dendrogramma_file.png}
+\end{figure}
+
+Selezionando l'opzione 1 per importare un dendrogramma preesistente, sarà necessario indicare il nome completo del file archivio, comprensivo di estensione. I file precedentemente salvati sono localizzati nella cartella \texttt{"saved"} all'interno della directory \texttt{"Jar + Bat"}.
+
+\subsection{Inserimento nome archivio con estensione}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{images/inserimento_nome_archivio.png}
+\end{figure}
+
+Dopo l'inserimento del nome dell'archivio, il sistema visualizzerà il dendrogramma caricato e concluderà l'esecuzione.
 

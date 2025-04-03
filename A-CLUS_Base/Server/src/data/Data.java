@@ -10,7 +10,7 @@ import database.MissingNumberException;
 
 /**
  * <h2>La classe {@code Data} gestisce l'acquisizione e la manipolazione dei dati provenienti
- * da una tabella di un database relazionale che verranno utilizzati nell'a-clus.</h2>
+ * da una tabella di un database relazionale che verranno utilizzati nell'A-CLus.</h2>
  * <p>
  * I dati vengono recuperati da una tabella specificata al momento della costruzione dell'oggetto e
  * consistono in una lista di oggetti {@link Example} che rappresentano le transazioni.

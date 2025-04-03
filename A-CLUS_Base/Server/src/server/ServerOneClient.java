@@ -225,7 +225,7 @@ public class ServerOneClient extends Thread{
             sendMessageToClient("Profondità del dendrogramma maggiore del numero di esempi nella tabella scelta.");
         } else if(h_clus.getLevel0Length() > data.getNumberOfExamples()) {
             sendMessageToClient("Il numero di esempi nella tabella scelta e' minore del " +
-                    "numero di esempi con cui e' stato salvato l'oggetto a-clus precedentemente serializzato.");
+                    "numero di esempi con cui e' stato salvato l'oggetto A-CLus precedentemente serializzato.");
         } else {
                 System.out.println(h_clus.toString(data));
                 out.writeObject(result);

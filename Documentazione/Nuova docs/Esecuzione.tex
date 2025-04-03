@@ -1,0 +1,28 @@
+\section{Eseguire A-CLus Base}
+
+\subsection*{Avvio dell'applicazione}
+
+Per inizializzare correttamente la versione standard di H-CLUS, attenersi alla seguente sequenza operativa:
+
+
+\begin{enumerate}
+    \item Accedere alla directory \texttt{A-CLus\_Base/Bat}
+    \item Eseguire il file \texttt{Start\_Server.bat} facendo un doppio click su di esso, assicurando che il server sia in esecuzione
+    \item Dopo aver verificato il corretto funzionamento del server, eseguire il file \texttt{Start\_Client.bat} facendo un doppio click su di esso  
+\end{enumerate}
+
+\begin{tcolorbox}[colback=white, colframe=gray, title=Avvertenza]
+    È necessario mantenere attivo il terminale del server per garantire la comunicazione tra le componenti client e server.
+\end{tcolorbox}
+
+\subsection*{Avvio dell'ambiente di sviluppo}
+
+Per aprire correttamente il codice sorgente di A-CLus, è necessario seguire le seguenti operazioni nell'ordine in cui sono presentate:
+
+\begin{enumerate}
+    \item Aprire il progetto \texttt{Server}
+    \item Incorporare nelle librerie del progetto \texttt{Server} il file \texttt{mySQL\_connector.jar} presente nella cartella \texttt{A-CLus/Risorse}
+    \item Avviare \texttt{MultiServer.java}
+    \item Controllare che il server sia in esecuzione correttamente
+    \item Aprire il progetto \texttt{MainTest.java}
+\end{enumerate}

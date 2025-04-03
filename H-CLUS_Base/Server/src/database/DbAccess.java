@@ -33,7 +33,7 @@ import java.sql.SQLException;
     /**
      * <h4>Nome del database.</h4>
      */
-    private final String DATABASE = "mapdb";
+    private final String DATABASE = "MapDB";
 
     /**
      * <h4>Porta sulla quale è in ascolto il server del database.</h4>
@@ -98,9 +98,7 @@ import java.sql.SQLException;
      * @throws SQLException Se si verifica un errore durante la chiusura della connessione.
      */
     public void closeConnection() throws SQLException {
-        if (conn != null) {
-            conn.close();
-        }
+        conn.close();
     }
 
 }

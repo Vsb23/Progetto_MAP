@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1743751976.05803 "c:/Users/stefa/Desktop/progetti/repos/Progetto_MAP/Documentazione/Documenti/main.tex" "main.pdf" "main" 1743751979.16596 0
+["pdflatex"] 1743757086.49459 "c:/Users/stefa/Desktop/progetti/repos/Progetto_MAP/Documentazione/Documenti/main.tex" "main.pdf" "main" 1743757089.63512 0
   "Aclus_e.tex" 1743751972 5138 1692673c9dcab25a847c8699c0abeaa9 ""
   "Cap4.tex" 1743703595 8158 cdf0cc707b8ad0be60b1053880bdbd06 ""
-  "Esecuzione.tex" 1743751756 7605 39247e37fc483635b6b280afc3a563aa ""
-  "Guida.tex" 1743705583 4811 3ee72d524bd77c58621bb7ccb2021f1f ""
+  "Esecuzione.tex" 1743757081 7563 c36a179c640e75f6606a1fc065df53fc ""
+  "Guida.tex" 1743756751 4811 4d49570de260d0717ddddd7fc11e79a2 ""
   "Introduzione.tex" 1743706654 3627 2e50181086e30c10cce893d95394a170 ""
   "c:/Users/stefa/Desktop/progetti/repos/Progetto_MAP/Documentazione/Documenti/main.tex" 1743750977 2025 d5bf48f75f52ed93ea3edf17f6799fcf ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1743273368 2375 baa924870cfb487815765f9094cf3728 ""
@@ -269,10 +269,10 @@
   "images/tg iniziale.png" 1743702110 330728 c15549e3fdc49a1afc7d3439cffd36a4 ""
   "images/tg schemrata clustering.png" 1743702379 163570 aaeb66ecc02b27ad2f0bf63082d80272 ""
   "images/variabili ambienti.png" 1743701401 26769 e981989388aab1dc44b55a831b95dcaf ""
-  "main.aux" 1743751978 9457 fb5e3f0a16dc2da345fb11e311917173 "pdflatex"
-  "main.out" 1743751978 10254 8d33bf9f7003bf65db4f469dddf1643f "pdflatex"
+  "main.aux" 1743757089 9415 6aada78e022ee56ad8843bc237d826bc "pdflatex"
+  "main.out" 1743757089 10026 b8cd068e762fbaad5c7a87b5157e6242 "pdflatex"
   "main.tex" 1743750977 2025 d5bf48f75f52ed93ea3edf17f6799fcf ""
-  "main.toc" 1743751978 4728 2f408dc6c7902e604b444fc4df395b65 "pdflatex"
+  "main.toc" 1743757089 4686 9ab84139bf4cee1e0c22cbb841f5db58 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

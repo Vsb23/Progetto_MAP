@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.29)  4 APR 2025 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.29)  4 APR 2025 10:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,6 +1058,11 @@ File: images/inserimento_nome_file.png Graphic file (type png)
 <use images/inserimento_nome_file.png>
 Package pdftex.def Info: images/inserimento_nome_file.png  used on input line 144.
 (pdftex.def)             Requested size: 345.0pt x 46.17955pt.
+<images/scelta_averageLink.png, id=422, 357.13425pt x 253.54726pt>
+File: images/scelta_averageLink.png Graphic file (type png)
+<use images/scelta_averageLink.png>
+Package pdftex.def Info: images/scelta_averageLink.png  used on input line 153.
+(pdftex.def)             Requested size: 345.0pt x 244.93463pt.
 
 
 
@@ -1068,11 +1073,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
 [12 <./images/inserimento_profondità.png> <./images/scelta_singleLink.png> <./images/inserimento_nome_file.png>]
-<images/scelta_averageLink.png, id=435, 357.13425pt x 253.54726pt>
-File: images/scelta_averageLink.png Graphic file (type png)
-<use images/scelta_averageLink.png>
-Package pdftex.def Info: images/scelta_averageLink.png  used on input line 153.
-(pdftex.def)             Requested size: 345.0pt x 244.93463pt.
 <images/carica_dendrogramma_file.png, id=436, 422.7795pt x 88.53075pt>
 File: images/carica_dendrogramma_file.png Graphic file (type png)
 <use images/carica_dendrogramma_file.png>
@@ -1109,6 +1109,10 @@ Package pdftex.def Info: images/errore_men.png  used on input line 21.
 (pdftex.def)             Requested size: 345.0pt x 133.50177pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.48878pt, for example:
@@ -1142,6 +1146,14 @@ File: images/controllo_metodologie.png Graphic file (type png)
 Package pdftex.def Info: images/controllo_metodologie.png  used on input line 50.
 (pdftex.def)             Requested size: 345.0pt x 61.65802pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/compatibilità_dimensionale.png, id=463, 667.293pt x 164.41425pt>
+File: images/compatibilità_dimensionale.png Graphic file (type png)
+<use images/compatibilità_dimensionale.png>
+Package pdftex.def Info: images/compatibilità_dimensionale.png  used on input line 57.
+(pdftex.def)             Requested size: 345.0pt x 85.00417pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1151,16 +1163,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
 [15 <./images/errore_men.png> <./images/Controllo_archivi.png> <./images/0_valore_errato.png>]
-<images/compatibilità_dimensionale.png, id=474, 667.293pt x 164.41425pt>
-File: images/compatibilità_dimensionale.png Graphic file (type png)
-<use images/compatibilità_dimensionale.png>
-Package pdftex.def Info: images/compatibilità_dimensionale.png  used on input line 57.
-(pdftex.def)             Requested size: 345.0pt x 85.00417pt.
 <images/connettività_clientserver.png, id=475, 492.6405pt x 180.675pt>
 File: images/connettività_clientserver.png Graphic file (type png)
 <use images/connettività_clientserver.png>
 Package pdftex.def Info: images/connettività_clientserver.png  used on input line 64.
 (pdftex.def)             Requested size: 345.0pt x 126.52951pt.
+<images/dataset_vuoti.png, id=476, 494.44725pt x 122.25674pt>
+File: images/dataset_vuoti.png Graphic file (type png)
+<use images/dataset_vuoti.png>
+Package pdftex.def Info: images/dataset_vuoti.png  used on input line 71.
+(pdftex.def)             Requested size: 345.0pt x 85.3049pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 
@@ -1171,11 +1187,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
 [16 <./images/-2_valore_errato.png> <./images/controllo_metodologie.png> <./images/compatibilità_dimensionale.png> <./images/connettività_clientserver.png>]
-<images/dataset_vuoti.png, id=490, 494.44725pt x 122.25674pt>
-File: images/dataset_vuoti.png Graphic file (type png)
-<use images/dataset_vuoti.png>
-Package pdftex.def Info: images/dataset_vuoti.png  used on input line 71.
-(pdftex.def)             Requested size: 345.0pt x 85.3049pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 81.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1193,10 +1204,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./images/dataset_vuoti.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.48878pt, for example:
@@ -1209,11 +1216,27 @@ Overfull \hbox (12.85757pt too wide) in paragraph at lines 23--24
 []\T1/lmr/m/n/10 Eseguire il fi-le \T1/lmtt/m/n/10 MultiServer.java \T1/lmr/m/n/10 pre-sen-te nel-la car-tel-la \T1/lmtt/m/n/10 server/src/server
  []
 
-<images/tg iniziale.png, id=507, 811.23074pt x 278.84175pt>
+<images/tg iniziale.png, id=508, 811.23074pt x 278.84175pt>
 File: images/tg iniziale.png Graphic file (type png)
 <use images/tg iniziale.png>
 Package pdftex.def Info: images/tg iniziale.png  used on input line 35.
 (pdftex.def)             Requested size: 172.5pt x 59.29031pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/inizia tg.png, id=509, 805.8105pt x 207.77625pt>
+File: images/inizia tg.png Graphic file (type png)
+<use images/inizia tg.png>
+Package pdftex.def Info: images/inizia tg.png  used on input line 43.
+(pdftex.def)             Requested size: 172.5pt x 44.47762pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/tg schemrata clustering.png, id=510, 805.20825pt x 302.3295pt>
+File: images/tg schemrata clustering.png Graphic file (type png)
+<use images/tg schemrata clustering.png>
+Package pdftex.def Info: images/tg schemrata clustering.png  used on input line 51.
+(pdftex.def)             Requested size: 172.5pt x 64.7643pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1227,16 +1250,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
 [19]
-<images/inizia tg.png, id=523, 805.8105pt x 207.77625pt>
-File: images/inizia tg.png Graphic file (type png)
-<use images/inizia tg.png>
-Package pdftex.def Info: images/inizia tg.png  used on input line 43.
-(pdftex.def)             Requested size: 172.5pt x 44.47762pt.
-<images/tg schemrata clustering.png, id=524, 805.20825pt x 302.3295pt>
-File: images/tg schemrata clustering.png Graphic file (type png)
-<use images/tg schemrata clustering.png>
-Package pdftex.def Info: images/tg schemrata clustering.png  used on input line 51.
-(pdftex.def)             Requested size: 172.5pt x 64.7643pt.
 <images/distanza da calcaolare tg.png, id=525, 933.4875pt x 355.3275pt>
 File: images/distanza da calcaolare tg.png Graphic file (type png)
 <use images/distanza da calcaolare tg.png>
@@ -1247,16 +1260,13 @@ File: images/profondità tg.png Graphic file (type png)
 <use images/profondità tg.png>
 Package pdftex.def Info: images/profondità tg.png  used on input line 64.
 (pdftex.def)             Requested size: 172.5pt x 27.4354pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <images/finale tg.png, id=527, 931.68076pt x 193.9245pt>
 File: images/finale tg.png Graphic file (type png)
 <use images/finale tg.png>
 Package pdftex.def Info: images/finale tg.png  used on input line 74.
 (pdftex.def)             Requested size: 172.5pt x 35.90504pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
@@ -1268,7 +1278,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
-[20 <./images/tg iniziale.png> <./images/inizia tg.png> <./images/tg schemrata clustering.png>]) (./cambiamdnti.tex
+[20 <./images/tg iniziale.png> <./images/inizia tg.png> <./images/tg schemrata clustering.png> <./images/distanza da calcaolare tg.png> <./images/profondità tg.png>]) (./cambiamdnti.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1277,7 +1287,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.48878pt}.
 
-[21 <./images/distanza da calcaolare tg.png> <./images/profondità tg.png> <./images/finale tg.png>]
+[21 <./images/finale tg.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1323,7 +1333,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8D33BF9F7003BF65DB4F469DDDF1643F;10254.
+(rerunfilecheck)             Checksum: B8CD068E762FBAAD5C7A87B5157E6242;10026.
  ) 
 Here is how much of TeX's memory you used:
  31143 strings out of 475119
@@ -1334,7 +1344,7 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  102i,12n,107p,1147b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (24 pages, 2479991 bytes).
+Output written on main.pdf (24 pages, 2479654 bytes).
 PDF statistics:
  661 PDF objects out of 1000 (max. 8388607)
  506 compressed objects within 6 object streams

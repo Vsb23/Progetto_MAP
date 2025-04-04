@@ -17,19 +17,19 @@
 \contentsline {subsection}{\numberline {3.3}Avvio dell'ambiente di sviluppo}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Interfaccia iniziale}{10}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Selezione delle operazioni disponibili}{11}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Percorso operativo - Generazione nuovo dendrogramma}{11}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Inserimento Profondità}{12}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.6}Generazione nuovo dendrogramma}{11}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Inserimento Profondità}{11}{subsection.3.7}%
 \contentsline {subsubsection}{\numberline {3.7.1}Elaborazione con Single-link}{12}{subsubsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.8}Inserimento nome file}{12}{subsection.3.8}%
 \contentsline {subsubsection}{\numberline {3.8.1}Elaborazione con Average-link}{13}{subsubsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.9}Percorso operativo - Caricamento dendrogramma esistente}{13}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Inserimento nome archivio con estensione}{14}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.9}Caricamento dendrogramma esistente}{13}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Inserimento nome archivio con estensione}{13}{subsection.3.10}%
 \contentsline {section}{\numberline {4}Test A-CLus Base}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Gestione di tabelle inesistenti}{14}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Validazione delle selezioni di menù}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Validazione delle selezioni di menù}{14}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Controllo sull'esistenza degli archivi}{15}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Validazione parametri di profondità}{15}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Controllo selezioni metodologiche}{16}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3}Controllo selezioni metodologiche}{15}{subsubsection.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.2.4}Verifica di compatibilità dimensionale}{16}{subsubsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.3}Gestione connettività client-server}{16}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Elaborazione su dataset vuoti}{17}{subsubsection.4.3.1}%
@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {6}Eseguire A-CLus Esteso}{19}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Avvio dall'ambiente di sviluppo}{19}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Guida operativa al bot Telegram}{19}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Test A-CLUS ESTESO}{20}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Test A-CLUS ESTESO}{21}{subsection.6.3}%
 \contentsline {section}{\numberline {7}Cambiamenti}{21}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Cambiamenti Motivati nella Versione Base Rispetto i Requisiti del Progetto}{21}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Cambiamenti Motivati nella Versione Estesa Rispetto alla Base}{22}{subsection.7.2}%

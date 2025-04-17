@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+}
+
+group = 'org.map'
+version = '1.0-SNAPSHOT'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation("org.telegram:telegrambots-longpolling:7.10.0")
+    implementation("org.telegram:telegrambots-client:7.10.0")
+}
+
+shadowJar {
+    archiveBaseName.set('client')
+    archiveClassifier.set('')
+    mergeServiceFiles()
+    manifest {
+        attributes('Main-Class': 'client.Main')
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

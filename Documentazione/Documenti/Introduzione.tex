@@ -1,0 +1,39 @@
+\section{Introduzione}
+
+Il progetto in questione verte sull'argoemento dell'\textit{Agglomerative Clustering}, una tecnica di clusterizzazione basata sui metodi Signle distance e Average Distance. 
+
+Il progtto in questione è suddiviso in una parte client e una server, che comunicando tra loro, generano il dendrogramma, permettendo inoltre di visualizzare e memorizzare tali risultati o di caricarne dei precedenti.
+
+È inoltre possibile visualizzare nuovamente dei file caricati in passato per visualizzare i cluster e i dendrogrammi associati. 
+
+
+\subsection{Agglomerative Clustering}
+
+L'algoritmo di clustering utilizzato in tale progetto, come si può desumer dal nome, sfrutta il concetto di clustering agglomerativo. In pratica, tratta ciascun cluster in maneira separata dagli altri, unendo progressivamente quelli più vicini, in base a due crtieri principali, nel nostro caso.
+
+Il princiaple vantaggio  rispetto ad altri algoritmi di lcustering, come il k-means, è che in questo modo non è necessario speficiare in anticippo la quantità di cluster da analizzare. 
+
+I criteri utilizzati nel progetto A-CLus sono i seguenti: 
+
+\begin{enumerate}
+    \item \textbf{Single-Link}: tale criterio determina la distanza minima tra i punti dei vari cluster
+
+    \begin{equation}
+        D\left(C1,C2\right) = \underset{\left(t1 \in C1,t2 \in C2\right)}{min}\left( dist\left(t1,t2\right)\right)
+    \end{equation}
+\end{enumerate}
+
+
+Durante l'anno accademico 2024/2025, l'oggetto di ricerca è stato incretrato su "A-CLus", una piattaforma con architettura client-server dedicata all'analisi dei dati mediante algoritmi di clustering gerarchico agglomerativo. La componente server esegue le operazioni di clustering impiegando le metodologie Single Link o Average Link per il calcolo delle distanze inter-cluster e la successiva costruzione del dendrogramma. L'applicativo client, implementato in linguaggio Java, offre agli utenti diverse funzionalità: il caricamento o la creazione di istanze HierarchicalClusterMiner, la rappresentazione grafica del dendrogramma e l'archiviazione dei risultati per analisi successive. È inoltre disponibile la funzione di importazione di file precedentemente salvati, consentendo agli utenti di riesaminare i cluster e i relativi dendrogrammi. 
+
+\subsubsection{Framework Analitico}
+
+La tecnica di clustering agglomerativo implementata nel sistema "A-CLus" costituisce una metodologia avanzata per l'identificazione di \underline{correlazioni latenti nei dataset}. 
+
+Diversamente da tecniche alternative come il k-means, l'approccio agglomerativo elimina la necessità di predefinire il numero di raggruppamenti. La procedura inizializza ciascun elemento come cluster individuale e procede con l'unificazione sequenziale dei cluster con maggiore affinità, applicando metodologie quali:  
+
+
+
+Con il procedere delle aggregazioni tra cluster, si sviluppa un dendrogramma che illustra la gerarchia delle aggregazioni. Il procedimento continua fino al raggiungimento di un cluster unificato o fino a una soglia di profondità stabilita dall'utilizzatore. La visualizzazione mediante dendrogramma rende la metodologia particolarmente comprensibile, facilitando l'esplorazione strutturale dei dati a diversi livelli di granularità. Inoltre, questa strategia non è influenzata dalla configurazione iniziale dei centroidi, riducendo così la probabilità di risultati inconsistenti e garantendo una rappresentazione più accurata dell'organizzazione interna del dataset.RiprovaClaude può commettere errori. Verifica sempre le risposte con attenzione.
+
+
